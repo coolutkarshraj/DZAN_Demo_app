@@ -1,5 +1,6 @@
 package com.dzan.exoplayerdemo.screens
 
+import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Button
 import androidx.compose.material.Scaffold
@@ -14,6 +15,7 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.dzan.exoplayerdemo.ui.theme.DAZNDemoAppTheme
 
+@SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
 fun MainScreen(navController : NavController) {
     Scaffold(

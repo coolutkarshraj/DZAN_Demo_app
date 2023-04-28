@@ -14,9 +14,6 @@ import com.dzan.exoplayerdemo.provideExoPlayer
 import com.google.firebase.analytics.FirebaseAnalytics
 import javax.inject.Inject
 
-@Inject
-lateinit var fireBaseModule : FirebaseAnalytics
-
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
 fun VideoScreen() {
