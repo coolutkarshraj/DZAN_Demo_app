@@ -18,11 +18,14 @@ import com.dzan.exoplayerdemo.screens.VideoScreen
 import com.dzan.exoplayerdemo.ui.theme.DAZNDemoAppTheme
 import com.google.android.exoplayer2.Player
 import com.google.firebase.analytics.FirebaseAnalytics
+import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 
 @Inject
 lateinit var fireBaseModule : FirebaseAnalytics
+
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -99,6 +102,7 @@ fun provideExoPlayer(context : Context, mediaItem: MediaItem): ExoPlayer {
                     bundle?.putString(player.playbackState.toString(), count++.toString());
                     fireBaseModule.logEvent(player.playbackState.toString(), bundle)
                 }
+
                 else -> {
                 // Other things
             }
