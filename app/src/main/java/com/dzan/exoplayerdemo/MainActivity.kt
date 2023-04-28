@@ -16,6 +16,7 @@ import com.google.android.exoplayer2.MediaItem
 import com.dzan.exoplayerdemo.screens.MainScreen
 import com.dzan.exoplayerdemo.screens.VideoScreen
 import com.dzan.exoplayerdemo.ui.theme.DAZNDemoAppTheme
+import com.google.firebase.analytics.FirebaseAnalytics
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
